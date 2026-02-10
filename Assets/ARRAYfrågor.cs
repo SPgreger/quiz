@@ -14,6 +14,37 @@ public class ARRAYfrågor : MonoBehaviour
        
     }
 
+    void NextQuestion()
+    {
+        currentQuestion++;
+    }
+
+    public void AnswerYes()
+    {
+        if (frågor[currentQuestion].answers[1].isCorrect)
+        {
+            print("rätt");
+            NextQuestion();
+        }
+        else
+        {
+            print("fel");
+            NextQuestion();
+        }
+    }
+    public void AnswerNo() {
+
+        if (frågor[currentQuestion].answers[0].isCorrect)
+        {
+            print("rätt");
+            NextQuestion();
+        }
+        else
+        {
+            NextQuestion();
+        }
+    }
+
     // Update is called once per frame
     void Update()
     {
