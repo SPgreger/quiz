@@ -62,7 +62,7 @@ public class ARRAYfrågor : MonoBehaviour
     {
         if (currentQuestion >= frågor.Length)
         {
-            SceneManager.LoadScene(4); 
+            SceneManager.LoadScene(2); 
         } 
 
         if(heart <= 0)
